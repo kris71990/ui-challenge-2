@@ -5,38 +5,43 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form novalidate class="form">
-      <label>inputs</label>
-      <input id="input-pri" type="checkbox">
-      <label class="labels" for="input-pri">
-        <div></div>
-      </label>
-
+    <h2>UI Challenge - Custom Form Elements</h2>
+    <form>
       <label>text input
         <input class="text" type="text" placeholder="placeholder text">
       </label>
       <label>text input w/ validation error
-        <input class="text" type="text" placeholder="placeholder text">
+        <input class="text" id="validation" type="text" placeholder="placeholder text" required>
+        <p>please enter a valid username</p>
       </label>
 
-      <label>select box
-        <select>
-          <option>option 1</option>
-          <option>option 2</option>
-          <option>option 3</option>
-          <option>option 4</option>
-          <option>option 5</option>
-        </select>
-      </label>
+      <label>select box</label>
+      <select class="sprite">
+        <option selected disabled>please select an option</option>
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+        <option>option 4</option>
+        <option>option 5</option>
+      </select>
 
       <label>checkbox
-        <div></div>
+        <section>
+          <div class="sprite" id="checkbox"></div>
+          <div class="sprite" id="checkbox2"></div>
+        </section>
       </label>
       <label>radio
-        <div></div>
+        <section>
+          <div class="sprite" id="radio"></div>
+          <div class="sprite" id="radio2"></div>
+        </section>
       </label>
-      <label>buttons
-        <div></div>
+      <label id="button-label">buttons
+        <div id="buttons">
+          <button id="button1">submit</button>
+          <button id="button2">submit</button>
+        </div>
       </label>
     </form>
   </body>
