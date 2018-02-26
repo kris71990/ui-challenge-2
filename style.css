@@ -1,43 +1,27 @@
 body {
   width: 100%;
-}
-/* 
-form {
-  width: 50%;
-} */
-
-/* form .labels {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 15px;
-  display: block;
-  transition: 350ms;
-  position: relative;
+  margin: 50px;
 }
 
-.labels div {
-  border: 1px solid grey;
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 25%;
-  left: 5%;
-  transition: 350ms;
-} */
+h2 {
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
 
 form label {
+  margin-top: 30px;
   display: block;
 }
 
 select {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
   display: block;
-  margin: 8px 0;
-  width: 250px;
-  
-}
+  margin: 10px 0 20px 0;
+  width: 255px;
+  border-radius: 0;
+  padding: 5px 10px;
+} 
 
 label {
   font-weight: bold;
@@ -46,9 +30,70 @@ label {
 .text {
   display: block;
   margin-top: 10px;
-  margin-bottom: 40px;
   width: 250px;
   line-height: 2em;
+}
+
+#validation:invalid {
+  border: 1px solid red;
+}
+
+#button-label div {
+  margin-top: 10px;
+}
+
+p {
+  font-size: 70%;
+  font-weight: normal;
+  padding-left: 120px;
+  margin-top: 2px;
+  
+}
+
+button {
+  padding: 13px 38px;
+  margin-right: 20px;
+  background-color: #CACFD2;
+  font-size: 1.3em;
+}
+
+button:hover {  
+  background-color: grey; 
+}
+
+.sprite {
+  margin-right: 20px;
+  display: inline-block;
+  background-image: url("form-elements-sprite.png");
+  background-repeat: no-repeat;
+} 
+
+#checkbox {
+  width: 60px;
+  height: 60px;
+  background-size: 800%;
+  background-position: -50px -75px;
+}
+
+#checkbox2 {
+  width: 60px;
+  height: 60px;
+  background-size: 800%;
+  background-position: -120px -75px;
+}
+
+#radio {
+  width: 60px;
+  height: 60px;
+  background-size: 800%;
+  background-position: -190px -75px;
+}
+
+#radio2 {
+  width: 60px;
+  height: 60px;
+  background-size: 800%;
+  background-position: -265px -75px;
 }
 
 /* input[type="checkbox"]:not(:checked) + label {
